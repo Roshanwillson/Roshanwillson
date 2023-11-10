@@ -1,0 +1,23 @@
+# Measure Energy Consumption 
+import pandas as pd
+import numpy as np
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pprint
+df = pd.read_csv(&quot;D:\AEP_hourly.csv&quot;)
+print(&quot;=&quot;*50)
+print(&quot;First Five Rows &quot;,&quot;\n&quot;)
+print(df.head(2),&quot;\n&quot;)
+
+print(&quot;=&quot;*50)
+print(&quot;Information About Dataset&quot;,&quot;\n&quot;)
+print(df.info(),&quot;\n&quot;)
+
+print(&quot;=&quot;*50)
+print(&quot;Describe the Dataset &quot;,&quot;\n&quot;)
+print(df.describe(),&quot;\n&quot;)
+
+print(&quot;=&quot;*50)
+print(&quot;Null Values t &quot;,&quot;\n&quot;)
+print(df.isnull().sum(),&quot;\n&quot;)
